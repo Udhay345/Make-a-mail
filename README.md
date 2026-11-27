@@ -131,17 +131,6 @@ Your browser opens **Gmail Compose** with the **To** address, **Subject**, and *
    streamlit run app.py
    ```
 
-## Deploy on Streamlit Community Cloud
-
-1. Push the repository to GitHub (`.gitignore` excludes `.env` and `.streamlit/secrets.toml`).
-2. Deploy `app.py` on [Streamlit Community Cloud](https://share.streamlit.io/).
-3. **(Optional Demo Mode)** Add keys under **App Settings -> Secrets**:
-   ```toml
-   GROQ_API_KEY = "your_groq_api_key"
-   TAVILY_API_KEY = "your_tavily_api_key"
-   ```
-   When configured, visitors get up to 3 demo runs per session before being asked to enter their own keys in the sidebar.
-
 ## Privacy & Human-in-the-Loop Note
 
 Uploaded resumes and API keys are processed strictly in memory for your active session and are never persisted. **Make a Mail** keeps a human in the loop at every step—you inspect the parsed resume, the retrieved sources, the discovered HR/professor emails, and the final Gmail draft before sending.
